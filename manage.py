@@ -27,7 +27,7 @@ def allowed_file(filename):
     extension = extension.lstrip('.')
     return extension in ALLOWED_EXTENSIONS
 
-@app.route('/upload', methods=['POST'])
+@app.route('/', methods=['POST'])
 def main():
     result, status_code = upload_file()
     if status_code == 200:

@@ -1,10 +1,10 @@
 from flask import Flask, request
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 ### 環境変数読み込み
-load_dotenv()
+# load_dotenv()
 
 app = Flask(__name__)
 

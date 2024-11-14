@@ -35,6 +35,10 @@ def main():
     else:
         return result, status_code
 
+@app.route('/', methods=['GET'])
+def not_found():
+    return "こちらのWebサイトは表示できません", 404
+
 def upload_file():
     file = request.files['file']
     # if file and allowed_file(file.filename):

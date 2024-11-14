@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request,render_template
 # from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 # import os
 # from dotenv import load_dotenv
@@ -37,7 +37,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def not_found():
-    return "こちらのWebサイトは表示できません", 404
+    text = "ここに結果が出力されます"
+    return render_template("page.html",text=text)
 
 # def upload_file():
 #     file = request.files['file']

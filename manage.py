@@ -50,5 +50,5 @@ def not_found():
 #         return f"File {filename} uploaded to Blob Storage.", 200
 #     return "Invalid file type.", 400
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

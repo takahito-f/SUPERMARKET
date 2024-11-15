@@ -2,12 +2,11 @@ import os
 from openai import AzureOpenAI
 from azure.storage.blob import BlobServiceClient, generate_container_sas, ContainerSasPermissions
 from datetime import datetime, timedelta, timezone
-
-from dotenv import load_dotenv # (LOCAL)
+# from dotenv import load_dotenv # (LOCAL)
 
 def analyze_image(img_name):
     # 環境変数読み込み(LOCAL)
-    load_dotenv()
+    # load_dotenv()
 
     # AzureOpenAIのインスタンスを生成　
     client = AzureOpenAI(

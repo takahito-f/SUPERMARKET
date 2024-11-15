@@ -2,11 +2,10 @@ from flask import Flask, request
 from azure.storage.blob import BlobServiceClient
 from imganalysis import analyze_image
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # 環境変数読み込み
-load_dotenv()
-print("============================================1")
+# load_dotenv()
 app = Flask(__name__)
 
 # アップロード可能ファイル

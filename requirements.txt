@@ -1,3 +1,4 @@
-Flask
+flask
 azure-storage-blob
 requests
+openai
